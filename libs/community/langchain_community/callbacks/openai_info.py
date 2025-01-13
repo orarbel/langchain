@@ -10,6 +10,14 @@ from langchain_core.messages import AIMessage
 from langchain_core.outputs import ChatGeneration, LLMResult
 
 MODEL_COST_PER_1K_TOKENS = {
+    # OpenAI o1 input
+    "o1": 0.015,
+    "o1-cached": 0.0075,
+    "o1-2024-12-17": 0.015,
+    "o1-2024-12-17-cached": 0.0075,
+    # OpenAI o1 output
+    "o1-completion": 0.06,
+    "o1-2024-12-17-completion": 0.06,
     # OpenAI o1-preview input
     "o1-preview": 0.015,
     "o1-preview-cached": 0.0075,
